@@ -1,0 +1,17 @@
+ScoreKeeper Algorithm
+
+start 
+	ask for username
+	print (input username "rey1sCool)
+	scan (input name)
+		if correct continue
+		if false ask again
+
+	ask for password
+	print (password prestige)
+	scan enter 2 times
+		if correct continue
+		if false ask again
+
+	read records.txt file
+	
