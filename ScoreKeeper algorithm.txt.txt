@@ -1,9 +1,12 @@
 ScoreKeeper Algorithm
+300 student : 120 -10
+	      100 -11
+	      80  -12
 
 start 
 	ask for username
 	print (input username "rey1sCool)
-	scan (input name)
+	scan (input name)minimum char 5
 		if correct continue
 		if false ask again
 
@@ -14,4 +17,16 @@ start
 		if false ask again
 
 	read records.txt file
+	value -1
+	print ( decimal) max value 2 behind coma
+	
+	type student name
+	print(student name:)
+	Scan(student name :)
+	if student name is not found
+	print (student name not found)
+	
+	create menu for 4 option
+	if number 4 was choosen exit the program
+
 	
