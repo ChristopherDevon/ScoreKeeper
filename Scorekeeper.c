@@ -15,10 +15,17 @@ main(){
 	printf("Password:");
 	scanf("%[^\n\n]");
 	getchar();
+
+	while( (p=getch())!= '\n');{
+        password[i] = p;
+        printf("*");
+        i++;
+    }
+    return 1;
 	
 	
 	}while (strcmp(u,username )!=0 || strcmp(p,password)!=0 );
-		printf("Try again");
+	
 	
 void cls(){			
 	int i;
@@ -58,7 +65,41 @@ void view(){
 	puts("");
 	printf("Press Enter to continue.....");
 	while(getchar() != '\n');
+}
 	
+void UpdateScore(){	
+	
+	char name[100] = "";
+	
+	puts("");
+	
+	do{
+		printf("Input player name[1..10]: ");
+		scanf("%s", name);
+		while(getchar() != '\n');
+	} while(strlen(name) < 1 || strlen(name) > 10);	//Verification for name length
+	
+	//Find player
+	int i;
+	for(i = 0; i < count; i++){
+		if(strcmp(playerName[i], name) == 0){
+			//Read new score
+			int newScore = -1;
+			do{
+				printf("Input player score[0..100]: ");
+				scanf("%d", &newScore);
+				while(getchar() != '\n');
+			} while(newScore < 0 || newScore > 100);	//Verification for score value
+			
+			//Calculate new average score
+			avgScore[i] = ((avgScore[i] * playingNumber[i]) + newScore) / ++playingNumber[i];
+			
+			puts("");
+			puts("Score successfully updated^^");
+			
+			break;
+		}
+	}
 
 	
 int main(){
