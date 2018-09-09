@@ -100,6 +100,18 @@ void UpdateScore(){
 			break;
 		}
 	}
+}
+
+void Save(){	
+	FILE *f = fopen("records.txt", "w");
+	
+	int i;
+	for(i = 0; i < count; i++){	
+		fprintf(f, "[^#]#%d#%d#%d#%d#%d#%d", Name[count],&Assignmet1[count],&Assignment2[count],&Test1[count],&Test2[count],Test3[count],Test4[count]);
+	}
+	
+	fclose(f);
+}
 
 	
 int main(){
@@ -146,4 +158,5 @@ int main(){
 	
 
 }
+
 
