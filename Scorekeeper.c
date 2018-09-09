@@ -16,7 +16,13 @@ main(){
 	scanf("%[^\n]");
 	getchar();
 	
+	if(strcmp(u,"rey1sCool")==0);
+    if(strcmp(p,"prestige")==0);
+ 		printf("\nWelcome.Login Success!");
+	
 	}while (strcmp(u,username )!=0 || strcmp(p,password)!=0 );
+		printf("Try again")
+	
 	
 	readFile();{
 	FILE *f = fopen("records.txt", "r");
@@ -42,6 +48,8 @@ main(){
 	
 	
 	}
+	
+	
 	
 	
 
