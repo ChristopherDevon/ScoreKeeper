@@ -16,12 +16,9 @@ main(){
 	scanf("%[^\n]");
 	getchar();
 	
-	if(strcmp(u,"rey1sCool")==0);
-    if(strcmp(p,"prestige")==0);
- 		printf("\nWelcome.Login Success!");
 	
 	}while (strcmp(u,username )!=0 || strcmp(p,password)!=0 );
-		printf("Try again")
+		printf("Try again");
 	
 	
 	readFile();{
@@ -41,13 +38,18 @@ main(){
 	fclose(f);
 }
 
-	view();{		
+void view(){
 	cls();
-	puts(" ScoreKeeper \n\n =======================================================");
-	puts("\n 1.View Student Score: \n 2.Update Student Score: \n 3.Save Student Score: \n 4.Exit \n Choice :");
-	
-	
+	puts("============================================================================================================================");
+	puts(" No | Student Name              | Assignment 1     | Assignment 2     | Test 1      |Test 2      |Test 3      |Test 4      |");
+	puts("============================================================================================================================");
+	int i;
+	for(i = 0; i < count; i++){
+		printf("  %s | %d | %d| %d| %d| %d| %d|, Name[i], Assignment1[i], Assignment2[i], Test1[i]), Test2[i], Test3[i], Test4[i]");
 	}
+	puts("");
+	printf("Press Enter to continue.....");
+	while(getchar() != '\n');
 	
 	
 	
