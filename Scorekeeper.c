@@ -13,7 +13,7 @@ main(){
 	getchar();
 	
 	printf("Password:");
-	scanf("%[^\n]");
+	scanf("%[^\n\n]");
 	getchar();
 	
 	
@@ -37,7 +37,7 @@ void readFile();{
 		return;
 	} else {
 		while(!feof(f)){
-			fscanf(f, "%s %d %d\n", StudentScore);	
+			fscanf(f, "[^#]#%d#%d#%d#%d#%d#%d", Name[count],&Assignmet1[count],&Assignment2[count],&Test1[count],&Test2[count],Test3[count],Test4[count]);	
 			count++;
 		}
 	}
