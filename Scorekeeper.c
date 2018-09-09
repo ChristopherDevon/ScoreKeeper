@@ -53,6 +53,47 @@ void view(){
 	
 	
 	
+int main(){
+	int choice = 0;
+	
+	readFile();
+	
+	do{
+		cls();
+		puts("Score Keeper");
+		puts("============");
+		puts("1.View Student Score");
+		puts("2.Update Student Score");
+		puts("3.Save Student Score");
+		puts("4.Exit (without saving)");
+		puts("");
+		
+		do{
+			choice = 0;
+			printf("Input your choice[1..4]: ");
+			scanf("%d", &choice);
+			while(getchar() != '\n');
+		} while(choice < 1 || choice > 4);
+		
+		switch(choice){
+			case 1:
+				view();
+				break;
+			case 2:
+				UpdateScore();
+				break;
+			case 3:
+				Save();
+				break;
+			case 4:
+				Exit();
+				break;
+			
+		}
+	} while(choice != 5);
+	
+	return 0;
+	
 	
 
 }
