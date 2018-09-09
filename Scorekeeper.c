@@ -20,8 +20,15 @@ main(){
 	}while (strcmp(u,username )!=0 || strcmp(p,password)!=0 );
 		printf("Try again");
 	
+void cls(){			
+	int i;
+	for(i = 0; i < 30; i++){
+		puts("");
+	}
+}
+
 	
-	readFile();{
+void readFile();{
 	FILE *f = fopen("records.txt", "r");
 	
 	if(!f){
@@ -38,6 +45,7 @@ main(){
 	fclose(f);
 }
 
+
 void view(){
 	cls();
 	puts("============================================================================================================================");
@@ -51,7 +59,7 @@ void view(){
 	printf("Press Enter to continue.....");
 	while(getchar() != '\n');
 	
-	
+
 	
 int main(){
 	int choice = 0;
