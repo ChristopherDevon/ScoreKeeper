@@ -7,6 +7,7 @@ main(){
 	char u[51]="";
 	char p[51]="";
 	
+void login (){
 	do{
 	printf("\n\n\n\n\n\nUsername:");
 	scanf("%[^\n]");
@@ -25,6 +26,7 @@ main(){
 	
 	
 	}while (strcmp(u,username )!=0 || strcmp(p,password)!=0 );
+}
 	
 	
 void cls(){			
